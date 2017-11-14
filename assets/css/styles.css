@@ -23,13 +23,15 @@ section{
 }
 
 .section-12{
-    /*background-image: url('../img/IMG-0023.JPG') !important;*/
-    opacity: 0.3;
-    position: 
+    background-image: url('../img/ProfileYellow.png');
+    background-size:50%;
+    background-repeat:no-repeat;
+    align:right;
+    background-color: #DBBA41;
 }
 
 .section-2 {
-	background-color: #BA9F3F !important;
+	background-color: #BA9F3F;
 }
 
 .section-3 {
