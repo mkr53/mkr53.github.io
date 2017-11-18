@@ -18,16 +18,16 @@ section{
 }
 
 .section-1 {
-    background: #DBBA41 !important;
+    background: #DBBA41;
 	/*opacity: 0.3;*/
 }
-
-.section-12{
-    background-image: url('../img/ProfileYellow.png');
-    background-size:50%;
-    background-repeat:no-repeat;
-    align:right;
-    background-color: #DBBA41;
+@media screen and (min-width: 790px) {
+    .section-12{
+        background-image: url('../img/PROFYELLOW.png');
+        background-size:540px;
+        background-repeat:no-repeat;
+        background-position: right;
+    }
 }
 
 .section-2 {
