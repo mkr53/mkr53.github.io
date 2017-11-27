@@ -32,6 +32,7 @@ section{
 
 .section-2 {
 	background-color: #BA9F3F;
+    overflow-x:auto;
 }
 
 .section-3 {
@@ -43,23 +44,53 @@ section{
 	padding: 0.2rem;
 }
 
+.section-5 {
+    background-color: #e8ecf2;
+}
+.seperation{
+border-right: thick double black;
+}
+
+.caption{
+    display:block;
+    text-align:center;
+}
 .row {
-    display: inline;
-    postion: relative;
     width: 100%;
     float:left;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    padding-top:20px;
+    
 }
 
 .column {
     float: left !important;
-    width: 26% !important;
+    width: 26%;
     padding:2em;
+    flex: 0 0 auto;
+    /* Hide columns by default */
+}
+
+.row-proj{
+    width: 100%;
+    float:left;
+}
+.column-proj {
+    float: left !important;
+    width: 50% !important;
+    height: 100%;
+    padding:2em;
+    display:table-cell;
     /* Hide columns by default */
 }
 
 .icon-column{
     float: left !important;
     width: 10% !important;
+    height:100%;
 }
 
 
@@ -72,9 +103,10 @@ a.nav-item:hover {
 }
 
 .arrow-icon{
-    width:5em !important;
+    max-wdith:2em !important;
     text-align: center;
     padding:150px 0;
+    
    /** height:2em !important; **/
 }
 .avatar{
@@ -94,10 +126,13 @@ a.nav-item:hover {
 
 .project-figure {
 	margin: 0 auto 1rem auto;
-	max-height: 256px;
+	max-height: 200px !important;
 	max-width: 256px;
 }
-
+.project-figure-big {
+    margin: 0 auto 1rem auto;
+    display:block;
+}
 .project-text {
 	text-align: justify;
 }
@@ -121,6 +156,16 @@ a.nav-item:hover {
 
 .void-background {
 	background-color: transparent; 
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 @media screen and (max-width: 768px) {
