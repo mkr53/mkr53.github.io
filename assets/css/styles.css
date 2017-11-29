@@ -124,14 +124,15 @@ a.nav-item:hover {
 	margin-bottom:15px;
 }
 
-.project-figure {
+.project-figure img{
 	margin: 0 auto 1rem auto;
-	max-height: 200px !important;
+	max-height: 256px !important;
 	max-width: 256px;
 }
-.project-figure-big {
+.project-figure-big img{
     margin: 0 auto 1rem auto;
     display:block;
+    max-height: 305px;
 }
 .project-text {
 	text-align: justify;
