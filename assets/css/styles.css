@@ -133,6 +133,7 @@ a.nav-item:hover {
 	margin: 0 auto 1rem auto;
 	max-height: 256px !important;
 	max-width: 256px;
+    min-height: 255px;
 }
 .project-figure-big img{
     margin: 0 auto 1rem auto;
