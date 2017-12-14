@@ -10,9 +10,23 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 	<meta name="author" content="Machenzie Rogers">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        
+        
+        <script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
+        <script>
+            // Wait for window load
+            $(window).load(function() {
+                           // Animate loader off screen
+                           $("#loader").animate({
+                                                top: -200
+                                                }, 1500);
+                           });
+            </script>
 </head>
 	<body>
-		<!-- Navbar -->
+        <img src="download.png" id="loader">
+ <!-- Navbar -->
 		<nav class="nav container void-background">
 			<!-- This "nav-menu" is hidden on mobile -->
 			<!-- Add the modifier "is-active" to display it on mobile -->
