@@ -10,22 +10,13 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 	<meta name="author" content="Machenzie Rogers">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="assets/js/please-wait.min.js"></script>
+        <script type="text/javascript" src="jquery-1.8.3.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
         
         
-        <script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
-        <script>
-            // Wait for window load
-            $(window).load(function() {
-                           // Animate loader off screen
-                           $("#loader").animate({
-                                                top: -200
-                                                }, 1500);
-                           });
-            </script>
 </head>
 	<body>
-        <img src="download.png" id="loader">
  <!-- Navbar -->
 		<nav class="nav container void-background">
 			<!-- This "nav-menu" is hidden on mobile -->
@@ -62,16 +53,17 @@
 		<!-- About Me -->
 		<section id="about" class="section section-1 section-12">
 			<div class="container has-text-centered">
-				<img class="avatar" src="assets/img/logo.png">
+				<img class="avatar" id="myAnimation" src="assets/img/logo.png">
 			</div>
           <!--  <div class="section-12">
                 <img src="assets/img/IMG-0023.JPG">
             </div> -->
 			<div class="container"></br>
-                <p class="intro" >
+                <p class="intro">
 					 Hi! My name is Machenzie Rogers and I am a web designer, illustrator and animator. Designing beautiful ways to entertain and communicate is my strongest passion, and my engineering degree specializing in art, graphics, and web networking gives me the core technical skills to do so with unrestricted flexibility. I work to produce works that come together as a whole - works that promote customer curiosity and investment.
 				</p>
 			</div>
+            </div>
 		</section>
         
         <!-- Projects -->
@@ -334,6 +326,13 @@
 		</section>
 		
 		<!-- Scripts  -->
-		<script src="controller.js"></script>		
+		<script src="controller.js"></script>
+        <script type="text/javascript">
+        window.loading_screen = window.pleaseWait({
+        logo: "assets/images/logo.png",
+        backgroundColor: '#f46d3b',
+        loadingHtml: "<p class='loading-message'>A good day to you fine user!</p>"
+        });
+        </script>
 	</body>	
 </html>
