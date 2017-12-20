@@ -3,11 +3,12 @@ html, body{
 	color: #dfdfdf;
 	background-color: #dbba41; 
 }
-/**loading**/
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-a {
-  color: #7f4f87;
+body > .inner {
+    display: none;
+}
+
+body.pg-loaded > .inner {
+    display: block;
 }
 
 a:hover {
