@@ -285,8 +285,11 @@ a.lightbox-close:after {
 
 @media screen and (max-width: 768px) {
 	.nav-menu {
-		background-color: #063647;
+		background-color: #0E282E;
 	}
+    .nav-item {
+        color:#0E282E;
+    }
 
 	.nav-toggle:hover {
 		background-color: transparent;
