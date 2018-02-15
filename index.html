@@ -10,11 +10,12 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 	<meta name="author" content="Machenzie Rogers">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="assets/js/please-wait.min.js"></script>
-        <script type="text/javascript" src="jquery-1.8.3.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+         <script src="anime.min.js"></script>
+         <script src="anime-master/anime.js"></script>
+       
         
-        
+
 </head>
 	<body>
  <!-- Navbar -->
@@ -49,8 +50,9 @@
 				<span></span>
 			</span>
 		</nav>
-				
+        
 		<!-- About Me -->
+    <div id="relativeOffset">
 		<section id="about" class="section section-1 section-12">
 			<div class="container has-text-centered">
 				<img class="avatar" id="myAnimation" src="assets/img/logo.png">
@@ -58,22 +60,39 @@
           <!--  <div class="section-12">
                 <img src="assets/img/IMG-0023.JPG">
             </div> -->
+    
 			<div class="container"></br>
-                <p class="intro" style="color:#0E282E;">
+               
+                    <div class="line">
+                        <div class="square el">
+                            <p class="intro" style="color:#0E282E; position:relative; right: 250px;">
 					 Hi! My name is Machenzie Rogers and I am a web designer, illustrator and animator. Designing beautiful ways to entertain and communicate is my strongest passion, and my engineering degree specializing in art, graphics, and web networking gives me the core technical skills to do so with unrestricted flexibility. I work to produce works that come together as a whole - works that promote customer curiosity and investment.
 				</p>
-			</div>
-            </div>
+               </div>
+                        </div>
+                    </div>
+			
+       
 		</section>
         
         <!-- Projects -->
         <section id="projects" class="section section-5">
             <div class="container">
-                <div class="has-text-centered">
-                    <h3 class="title is-3" style="color:black;">Website Design </h3>
-                    <p style="color:black;">
-                    Displayed below are four instances of web mockup designs, branded based on organizational need and desire.
+        <!--        <div class="has-text-centered">  -->
+                    <div class="line">
+                        <div class="square el">
+                            <h3 class="title is-3" style="color:black; position:relative; right:250px">Website Design </h3>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="square el">
+                            <p style="color:black; position:relative; right:250px;">
+                    Displayed below are four instances of web mockup designs, branded based on organizational need and look.
                     </p>
+                    </div>
+                    </div>
+               <!--     </div>  -->
+               
                     <p>
                     .
                     </p>
@@ -86,19 +105,29 @@
                             <a href="#dream">
                             <img src="assets/img/dreamcomp.png" alt="Image">
                                 </a>
+                            <a href="https://dreamscape720365008.wordpress.com">
+                                <button class="button">
+                                    Visit Site
+                                </button>
+                                </a>
                                 </figure>
                     </div>
                     <div class=" column-proj" style="background-color: #EEECEC; display:table-cell;">
                         <figure class="image project-figure-big">
-                            <a href ="#progress">
-                            <img src="assets/img/progresscomp.png" alt="Image">
+                            <a href="#hollys">
+                                <img src="assets/img/hollyscomp.png" alt="Image">
                                 </a>
+                            <a href="http://www.hollysplants.com">
+                                <button class="button">
+                                    Visit Site
+                                    </button>
+                            </a>
                                 </figure>
                     </div>
                     <div class="column-proj" style="background-color: #EEECEC; display:table-cell;">
                         <figure class="image project-figure-big">
-                            <a href="#hollys">
-                            <img src="assets/img/hollyscomp.png" alt="Image">
+                            <a href ="#progress">
+                                <img src="assets/img/progresscomp.png" alt="Image">
                                 </a>
                         </figure>
                                 <!--  <figure class="image project-figure-big" style="width:48%; float:left; margin: 2px;">
@@ -334,12 +363,37 @@
 		
 		<!-- Scripts  -->
 		<script src="controller.js"></script>
+        <script type="text/javascript"></script>
         <script type="text/javascript">
-        window.loading_screen = window.pleaseWait({
-        logo: "assets/images/logo.png",
-        backgroundColor: '#f46d3b',
-        loadingHtml: "<p class='loading-message'>A good day to you fine user!</p>"
+        var relativeOffset = anime.timeline();
+        
+        relativeOffset
+        .add({
+        targets: '#relativeOffset .square.el',
+        translateX: 250
+        })
+        .add({
+        targets: '#relativeOffset .circle.el',
+        translateX: 250,
+// Starts 600ms before the previous animation ends
+        })
+        .add({
+        targets: '#relativeOffset .triangle.el',
+        translateX: 250,
+        offset: '-=20' // Starts 800ms before the previous animation ends
         });
         </script>
+        <script type="text/javascript">
+        var cssSelector = anime({
+        targets: '#cssSelector .el',
+        translateX: {
+        value: 250,
+        duration:800
+        },
+        direction: 'alternate'
+        });
+        </script>
+        
+        
 	</body>	
 </html>
