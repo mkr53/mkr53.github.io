@@ -10,6 +10,19 @@ body > .inner {
 body.pg-loaded > .inner {
     display: block;
 }
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+path {
+    fill: none;
+    stroke: black;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 
 a:hover {
   color: #7f4f87;
@@ -139,10 +152,20 @@ a.nav-item:hover {
     min-height: 255px;
 }
 .project-figure-big img{
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem 1rem;
     display:block;
     max-height: 305px;
 }
+.button {
+    background-color: #0F133A;
+    left: 13%;
+    color: white;
+    width: 80%;
+    margin: 20px 0 20px 0;
+
+}
+
+
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
 .lightbox-target {
     position: fixed;
