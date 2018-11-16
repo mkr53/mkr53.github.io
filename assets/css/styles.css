@@ -1,7 +1,7 @@
 html, body{
-	font-size:16px;
-	color: #dfdfdf;
-	background-color: #dbba41; 
+    font-size:16px;
+    color: #dfdfdf;
+    background-color: #DDE8E8;
 }
 body > .inner {
     display: none;
@@ -25,21 +25,27 @@ path {
 
 
 a:hover {
-  color: #7f4f87;
+    color: #7f4f87;
 }
-
+.square.el, .square.el .title{
+    
+    color:#111111;
+}
+.square.el .title{
+    font-size:25px;
+}
 section{
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .section-1 {
-    background: #DBBA41;
-	/*opacity: 0.3;*/
+    background: #DDE8E8;
+    /*opacity: 0.3;*/
 }
 @media screen and (min-width: 790px) {
     .section-12{
-        background-image: url('../img/PROFYELLOW.png');
+        //   background-image: url('../img/PROFYELLOW.png');
         background-size:540px;
         background-repeat:no-repeat;
         background-position: 100% 60px;
@@ -48,24 +54,24 @@ section{
 }
 
 .section-2 {
-	background-color: #BA9F3F;
+    background-color: #BA9F3F;
     overflow-x:auto;
 }
 
 .section-3 {
-	background-color: #0E282E;
+    background-color: #0E282E;
 }
 
 .section-4 {
-	background-color: #DBBA41;
-	padding: 0.2rem;
+    background-color: #DBBA41;
+    padding: 0.2rem;
 }
 
 .section-5 {
     background-color: #e8ecf2;
 }
 .seperation{
-border-right: thick double black;
+    border-right: thick double black;
 }
 
 .caption{
@@ -116,11 +122,11 @@ border-right: thick double black;
 
 
 a.nav-item {
-	color: #dfdfdf;
+    color: #dfdfdf;
 }
 
 a.nav-item:hover {
-	color: #fff;
+    color: #fff;
 }
 
 .arrow-icon{
@@ -128,27 +134,27 @@ a.nav-item:hover {
     text-align: center;
     padding:150px 0;
     
-   /** height:2em !important; **/
+    /** height:2em !important; **/
 }
 .avatar{
-	height:200px;
-	border-radius: 50%;
+    height:200px;
+    border-radius: 50%;
 }
 
 .intro-description{
-	padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 .social-container img{
-	max-width:100%;
-	max-height:175px;
-	margin-bottom:15px;
+    max-width:100%;
+    max-height:175px;
+    margin-bottom:15px;
 }
 
 .project-figure img{
-	margin: 0 auto 1rem auto;
-	max-height: 256px !important;
-	max-width: 256px;
+    margin: 0 auto 1rem auto;
+    max-height: 256px !important;
+    max-width: 256px;
     min-height: 255px;
 }
 .project-figure-big img{
@@ -162,7 +168,7 @@ a.nav-item:hover {
     color: white;
     width: 80%;
     margin: 20px 0 20px 0;
-
+    
 }
 
 
@@ -272,33 +278,34 @@ a.lightbox-close:after {
 
 
 .project-text {
-	text-align: justify;
+    text-align: justify;
 }
 
 .box {
-	background-color: transparent;
-	border: 2px solid rgba(7, 59, 79, 0.5);
+    background-color: transparent;
+    border: 2px solid rgba(7, 59, 79, 0.5);
 }
 
 .title {
-	color: #fff;
-	text-align: left;
-	margin-bottom: 2rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .intro {
-	text-align: justify;
-	width: 80%;
-	margin: 0 auto;
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .void-background {
-	background-color: transparent; 
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
+    background-color:#ffffff;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
@@ -307,23 +314,60 @@ a.lightbox-close:after {
 }
 
 @media screen and (max-width: 768px) {
-	.nav-menu {
-		background-color: #0E282E;
-	}
+    .nav-menu {
+        background-color: #0E282E;
+    }
     .nav-item {
         color:#0E282E;
     }
+    
+    .nav-toggle:hover {
+        background-color: transparent;
+    }
+    
+    .nav-toggle span {
+        background-color: #111111;
+    }
+    
+    .nav-toggle span:hover {
+        background-color: #fff;
+    }
+    
+}
+@media screen and (max-width: 768px){
+.nav-menu .nav-item {
+    background-color:#DDE8E8;
+    color:#111111;
+    text-align:center;
+    width:100%;
+}
+}
 
-	.nav-toggle:hover {
-		background-color: transparent;
-	}
 
-	.nav-toggle span {
-		background-color: #dfdfdf;
-	}
+#videosList {
+    max-width: 100%;
+    overflow: hidden;
+}
 
-	.nav-toggle span:hover {
-		background-color: #fff;
-	}
-
+.video {
+ //   background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
+    height: 330px;
+    width: 47%;
+    margin-bottom: 50px;
+    display:inline-block;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.video.os{
+    background-image: url('../img/OSpic.png');
+    
+}
+.video.bp{
+    background-image: url('../img/BPpic.png');
+    float:right;
+    
+}
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
 }
